@@ -1,0 +1,43 @@
+<UserControl x:Class="Portfolio.OfficeSystem.RoomAvatarView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Portfolio.OfficeSystem"
+             ClipToBounds="True">
+    <Border CornerRadius="14" Background="{DynamicResource BrandLightBrush}" ClipToBounds="True">
+        <Grid x:Name="PART_Grid">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Border x:Name="Slot0" Grid.Row="0" Grid.Column="0" Background="{DynamicResource BrandLightBrush}" BorderBrush="White" BorderThickness="0">
+                <Grid>
+                    <Image x:Name="Image0" Stretch="UniformToFill"/>
+                    <TextBlock x:Name="Initial0" Foreground="{DynamicResource BrandDarkBrush}" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+            </Border>
+            <Border x:Name="Slot1" Grid.Row="0" Grid.Column="1" Background="{DynamicResource BrandLightBrush}" BorderBrush="White" BorderThickness="1,0,0,0">
+                <Grid>
+                    <Image x:Name="Image1" Stretch="UniformToFill"/>
+                    <TextBlock x:Name="Initial1" Foreground="{DynamicResource BrandDarkBrush}" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+            </Border>
+            <Border x:Name="Slot2" Grid.Row="1" Grid.Column="0" Background="{DynamicResource BrandLightBrush}" BorderBrush="White" BorderThickness="0,1,0,0">
+                <Grid>
+                    <Image x:Name="Image2" Stretch="UniformToFill"/>
+                    <TextBlock x:Name="Initial2" Foreground="{DynamicResource BrandDarkBrush}" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+            </Border>
+            <Border x:Name="Slot3" Grid.Row="1" Grid.Column="1" Background="{DynamicResource BrandLightBrush}" BorderBrush="White" BorderThickness="1,1,0,0">
+                <Grid>
+                    <Image x:Name="Image3" Stretch="UniformToFill"/>
+                    <TextBlock x:Name="Initial3" Foreground="{DynamicResource BrandDarkBrush}" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+            </Border>
+        </Grid>
+    </Border>
+</UserControl>

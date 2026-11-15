@@ -1,0 +1,41 @@
+<Window x:Class="Portfolio.OfficeSystem.DocumentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        Title="문서 보기" Height="800" Width="1000"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent"
+        Icon="App.ico">
+    <Border CornerRadius="15" Background="White" BorderBrush="#4F46E5" BorderThickness="1" ClipToBounds="True">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Custom Title Bar -->
+            <Border Grid.Row="0" Background="#F8F9FA" BorderBrush="#E0E5EE" BorderThickness="0,0,0,1" MouseLeftButtonDown="TitleBar_MouseDown">
+                <Grid>
+                    <TextBlock x:Name="txtTitle" Text="WorkHub Desktop 문서" VerticalAlignment="Center" Margin="15,0,0,0" 
+                               FontWeight="Bold" Foreground="#1A1D21"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                        <Button Content="새로고침" Click="Refresh_Click" Margin="0,0,10,0" Padding="10,0" 
+                                Background="Transparent" BorderThickness="0" Cursor="Hand"/>
+                        <Button Content="닫기" Click="Close_Click" Margin="0,0,10,0" Padding="10,0" 
+                                Background="Transparent" BorderThickness="0" Cursor="Hand" FontWeight="Bold"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <wv2:WebView2 x:Name="webView" Grid.Row="1"/>
+            
+            <!-- Loading Overlay -->
+            <Grid x:Name="loadingOverlay" Grid.Row="1" Background="White">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <ProgressBar IsIndeterminate="True" Width="200" Height="4"/>
+                    <TextBlock Text="문서를 불러오는 중입니다..." Margin="0,15,0,0" Foreground="#666"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

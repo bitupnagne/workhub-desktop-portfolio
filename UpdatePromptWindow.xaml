@@ -1,0 +1,44 @@
+<Window x:Class="Portfolio.OfficeSystem.UpdatePromptWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="업데이트 안내"
+        Width="380" Height="360"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        ShowInTaskbar="False"
+        Topmost="True"
+        FontFamily="{DynamicResource BaseFontFamily}"
+        Foreground="{DynamicResource Text1Brush}">
+    <Border Background="{DynamicResource SurfaceBrush}"
+            BorderBrush="{DynamicResource BrandBrush}"
+            BorderThickness="1"
+            CornerRadius="20"
+            Padding="26"
+            Margin="10">
+        <Border.Effect>
+            <DropShadowEffect BlurRadius="24" ShadowDepth="6" Opacity="0.26"/>
+        </Border.Effect>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="txtTitle" Text="업데이트 안내" FontSize="18" FontWeight="ExtraBold" HorizontalAlignment="Center" Margin="0,0,0,12"/>
+            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Padding="0,2,4,2">
+                <TextBlock x:Name="txtMessage" Text="새 버전이 있습니다." FontSize="13" Foreground="{DynamicResource Text2Brush}" TextAlignment="Left" TextWrapping="Wrap" LineHeight="20"/>
+            </ScrollViewer>
+            <Grid Grid.Row="2" Margin="0,20,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnCancel" Grid.Column="0" Content="나중에" Click="Cancel_Click" Height="42" Margin="0,0,5,0" Background="{DynamicResource Text3Brush}" Foreground="White" FontWeight="Bold" BorderThickness="0" Cursor="Hand"/>
+                <Button x:Name="btnConfirm" Grid.Column="1" Content="업데이트" Click="Update_Click" Height="42" Margin="5,0,0,0" Background="{DynamicResource BrandBrush}" Foreground="White" FontWeight="Bold" BorderThickness="0" Cursor="Hand"/>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

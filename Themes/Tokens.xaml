@@ -1,0 +1,44 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="clr-namespace:System;assembly=System.Runtime">
+
+    <!-- =========================================================
+         FONT FAMILY
+         ========================================================= -->
+    <FontFamily x:Key="BaseFontFamily">pack://application:,,,/Fonts/#Pretendard</FontFamily>
+
+    <!-- =========================================================
+         TYPOGRAPHY (7 sizes)
+         ========================================================= -->
+    <sys:Double x:Key="FontXs">11</sys:Double>
+    <sys:Double x:Key="FontSm">12</sys:Double>
+    <sys:Double x:Key="FontBase">13</sys:Double>
+    <sys:Double x:Key="FontMd">14</sys:Double>
+    <sys:Double x:Key="FontLg">16</sys:Double>
+    <sys:Double x:Key="FontXl">20</sys:Double>
+    <sys:Double x:Key="Font2Xl">24</sys:Double>
+
+    <!-- =========================================================
+         RADIUS (4 steps)
+         ========================================================= -->
+    <CornerRadius x:Key="RadiusSm">6</CornerRadius>
+    <CornerRadius x:Key="RadiusMd">10</CornerRadius>
+    <CornerRadius x:Key="RadiusLg">14</CornerRadius>
+    <CornerRadius x:Key="RadiusXl">20</CornerRadius>
+
+    <!-- =========================================================
+         ELEVATION (3 levels)
+         ========================================================= -->
+    <DropShadowEffect x:Key="Elevation1" BlurRadius="6" ShadowDepth="1" Opacity="0.06" Direction="270"/>
+    <DropShadowEffect x:Key="Elevation2" BlurRadius="14" ShadowDepth="3" Opacity="0.12" Direction="270"/>
+    <DropShadowEffect x:Key="Elevation3" BlurRadius="22" ShadowDepth="7" Opacity="0.22" Direction="270"/>
+
+    <!-- =========================================================
+         MOTION
+         ========================================================= -->
+    <Duration x:Key="MotionFast">0:0:0.12</Duration>
+    <Duration x:Key="MotionBase">0:0:0.20</Duration>
+    <Duration x:Key="MotionSlow">0:0:0.30</Duration>
+
+</ResourceDictionary>
