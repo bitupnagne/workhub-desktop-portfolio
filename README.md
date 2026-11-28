@@ -4,7 +4,7 @@ WorkHub 업무와 알림을 Windows 데스크톱에서 이어가는 WPF 클라�
 
 ![.NET](https://img.shields.io/badge/.NET-10-512BD4?logo=dotnet&logoColor=white) ![WPF](https://img.shields.io/badge/WPF-Windows-0078D4) ![WebView2](https://img.shields.io/badge/WebView2-embedded%20web-0078D4) ![WebSocket](https://img.shields.io/badge/WebSocket-real--time-4b5563) ![Inno Setup](https://img.shields.io/badge/Inno%20Setup-installer-264b99)
 
-[포트폴리오](https://beom.it/ko#projects) · [Portfolio in English](https://beom.it/en#projects) · [WorkHub 공개 웹 데모](https://work.beom.it) · [아키텍처 설계도](docs/architecture/Office_System_아키텍처_포트폴리오.pdf)
+[포트폴리오](https://beom.it/ko#projects) · [Portfolio in English](https://beom.it/en#projects) · [WorkHub 공개 웹 데모](https://work.beom.it) · [Desktop 아키텍처·흐름 PDF](docs/architecture/WorkHub_Desktop_아키텍처_흐름.pdf) · [Office System 전체 PDF](docs/architecture/Office_System_아키텍처_포트폴리오.pdf)
 
 ## 주요 기능 / Features
 
