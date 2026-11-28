@@ -1,0 +1,11 @@
+<UserControl x:Class="Portfolio.OfficeSystem.ChatImageGrid"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Portfolio.OfficeSystem"
+             HorizontalAlignment="Left">
+    <!-- 액자 프레임(브랜드 격자선) — 내부 Grid를 코드에서 장수별로 구성 -->
+    <Border CornerRadius="10" ClipToBounds="True" HorizontalAlignment="Left"
+            Background="{DynamicResource BrandBrush}" BorderBrush="{DynamicResource BrandBrush}" BorderThickness="2">
+        <Grid x:Name="root"/>
+    </Border>
+</UserControl>

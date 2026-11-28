@@ -1,0 +1,40 @@
+<Window x:Class="Portfolio.OfficeSystem.SplashWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:svg="http://sharpvectors.codeplex.com/svgc/"
+        Title="WorkHub Desktop" Height="380" Width="560"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="White"
+        Topmost="True" ShowInTaskbar="True"
+        UseLayoutRounding="True"
+        TextOptions.TextRenderingMode="ClearType"
+        FontFamily="Malgun Gothic">
+    <Border x:Name="SplashBorder" Background="White" BorderBrush="#4F46E5" BorderThickness="1.5">
+        <Grid x:Name="MainGrid">
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <svg:SvgViewbox x:Name="SplashLogo" Source="/AppLogo.svg" Width="304" Height="76" HorizontalAlignment="Center" Margin="0,0,0,20" AutomationProperties.Name="WorkHub"/>
+                <TextBlock Text="WorkHub Desktop" FontSize="22" FontWeight="ExtraBold" Foreground="#111827" HorizontalAlignment="Center"/>
+                <TextBlock x:Name="StatusText" Text="시스템을 시작하고 있습니다" FontSize="12" Foreground="#6B7280" HorizontalAlignment="Center" Margin="0,8,0,24"/>
+
+                <Border Width="320" Height="5" Background="#F1F5F9" CornerRadius="3" ClipToBounds="True">
+                    <Rectangle x:Name="AnimationBar" Width="120" HorizontalAlignment="Left" RadiusX="3" RadiusY="3">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                                <GradientStop x:Name="BarStart" Color="#4F46E5" Offset="0"/>
+                                <GradientStop x:Name="BarMid" Color="#6366F1" Offset="0.5"/>
+                                <GradientStop Color="#A5B4FC" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                        <Rectangle.RenderTransform>
+                            <TranslateTransform x:Name="BarTranslate" X="-120"/>
+                        </Rectangle.RenderTransform>
+                    </Rectangle>
+                </Border>
+            </StackPanel>
+            <TextBlock x:Name="VersionText" Text="" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="20" Foreground="#9CA3AF" FontSize="11"/>
+            <Button Content="—" Click="Minimize_Click" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="8" Background="Transparent" BorderThickness="0" Foreground="#9CA3AF" Cursor="Hand" FontSize="16" ToolTip="최소화"/>
+        </Grid>
+    </Border>
+</Window>

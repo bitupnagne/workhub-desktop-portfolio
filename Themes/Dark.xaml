@@ -1,0 +1,41 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Brand (locked but tuned for dark) -->
+    <SolidColorBrush x:Key="BrandBrush" Color="#4F46E5"/>
+    <SolidColorBrush x:Key="BrandDarkBrush" Color="#6366F1"/>
+    <SolidColorBrush x:Key="BrandLightBrush" Color="#1E1B4B"/>
+
+    <!-- Surface -->
+    <SolidColorBrush x:Key="SurfaceBrush" Color="#161B22"/>
+    <SolidColorBrush x:Key="SurfaceAltBrush" Color="#0F1419"/>
+    <SolidColorBrush x:Key="BgBrush" Color="#0B1014"/>
+    <SolidColorBrush x:Key="BorderBrush" Color="#30363D"/>
+    <SolidColorBrush x:Key="OverlayBrush" Color="#A0000000"/>
+    <SolidColorBrush x:Key="HoverBrush" Color="#1C2128"/>
+
+    <!-- Text -->
+    <SolidColorBrush x:Key="Text1Brush" Color="#E6EDF3"/>
+    <SolidColorBrush x:Key="Text2Brush" Color="#C9D1D9"/>
+    <SolidColorBrush x:Key="Text3Brush" Color="#8B949E"/>
+
+    <!-- Gray ramp (inverted for semantic parity) -->
+    <SolidColorBrush x:Key="Gray50Brush" Color="#0F1419"/>
+    <SolidColorBrush x:Key="Gray100Brush" Color="#1C2128"/>
+    <SolidColorBrush x:Key="Gray200Brush" Color="#30363D"/>
+    <SolidColorBrush x:Key="Gray400Brush" Color="#6E7681"/>
+    <SolidColorBrush x:Key="Gray600Brush" Color="#8B949E"/>
+    <SolidColorBrush x:Key="Gray900Brush" Color="#E6EDF3"/>
+
+    <!-- Semantic (slightly desaturated for dark) -->
+    <SolidColorBrush x:Key="InfoBrush" Color="#60A5FA"/>
+    <SolidColorBrush x:Key="InfoLightBrush" Color="#1E3A5F"/>
+    <SolidColorBrush x:Key="SuccessBrush" Color="#34D399"/>
+    <SolidColorBrush x:Key="SuccessLightBrush" Color="#143C2E"/>
+    <SolidColorBrush x:Key="WarningBrush" Color="#FBBF24"/>
+    <SolidColorBrush x:Key="WarningLightBrush" Color="#3D2E0F"/>
+    <SolidColorBrush x:Key="DangerBrush" Color="#F87171"/>
+    <SolidColorBrush x:Key="DangerLightBrush" Color="#3F1717"/>
+
+</ResourceDictionary>
